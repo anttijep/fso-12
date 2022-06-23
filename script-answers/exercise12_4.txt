@@ -1,0 +1,446 @@
+Script started on 2022-06-23 12:11:49+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+]0;anxi@DESKTOP-GNVK18U: ~/fso-12/fso-12/script-answers[01;32manxi@DESKTOP-GNVK18U[00m:[01;34m~/fso-12/fso-12/script-answers[00m$ exitdocker container start -i crazy_liskovls -a[Kstart -i crazy_liskov
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# [K]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt install nodejs
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14 libnode72 libuv1
+  nodejs-doc openssl
+Suggested packages:
+  apache2 | lighttpd | httpd npm
+The following NEW packages will be installed:
+  ca-certificates javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14 libnode72 libuv1
+  nodejs nodejs-doc openssl
+0 upgraded, 12 newly installed, 0 to remove and 8 not upgraded.
+Need to get 26.1 MB of archives.
+After this operation, 93.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 openssl amd64 3.0.2-0ubuntu1.5 [1186 kB]
+[33m0% [1 openssl 4095 B/1186 kB 0%][0m[33m2% [1 openssl 788 kB/1186 kB 66%][0m[33m                                 5% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 ca-certificates all 20211016 [148 kB]
+[33m5% [2 ca-certificates 2637 B/148 kB 2%][0m[33m                                       7% [Waiting for headers][0m                        Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libicu70 amd64 70.1-2 [10.6 MB]
+[33m7% [3 libicu70 739 B/10.6 MB 0%][0m[33m10% [3 libicu70 888 kB/10.6 MB 8%][0m[33m13% [3 libicu70 1782 kB/10.6 MB 17%][0m[33m16% [3 libicu70 2675 kB/10.6 MB 25%][0m[33m18% [3 libicu70 3566 kB/10.6 MB 34%][0m[33m21% [3 libicu70 4460 kB/10.6 MB 42%][0m[33m24% [3 libicu70 5347 kB/10.6 MB 51%][0m[33m27% [3 libicu70 6238 kB/10.6 MB 59%][0m[33m29% [3 libicu70 7128 kB/10.6 MB 67%][0m[33m32% [3 libicu70 8025 kB/10.6 MB 76%][0m[33m35% [3 libicu70 8915 kB/10.6 MB 84%][0m[33m37% [3 libicu70 9806 kB/10.6 MB 93%]                                                                       1731 kB/s 8s[0m[33m41% [Waiting for headers]                                                                                  1731 kB/s 8s[0m                                                                                                                       Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libnghttp2-14 amd64 1.43.0-1build3 [76.3 kB]
+[33m41% [4 libnghttp2-14 595 B/76.3 kB 1%]                                                                     1731 kB/s 8s[0m[33m43% [Waiting for headers]                                                                                  1731 kB/s 8s[0m                                                                                                                       Get:5 http://archive.ubuntu.com/ubuntu jammy/main amd64 libuv1 amd64 1.43.0-1 [93.1 kB]
+[33m43% [5 libuv1 2901 B/93.1 kB 3%]                                                                           1731 kB/s 8s[0m[33m45% [Working]                                                                                              1731 kB/s 8s[0m                                                                                                                       Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 javascript-common all 11+nmu1 [5936 B]
+[33m45% [6 javascript-common 47 B/5936 B 1%]                                                                   1731 kB/s 8s[0m[33m47% [Waiting for headers]                                                                                  1731 kB/s 8s[0m                                                                                                                       Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 libbrotli1 amd64 1.0.9-2build6 [315 kB]
+[33m47% [7 libbrotli1 2588 B/315 kB 1%]                                                                        1731 kB/s 8s[0m[33m50% [Waiting for headers]                                                                                  1731 kB/s 7s[0m                                                                                                                       Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libjs-highlight.js all 9.18.5+dfsg1-1 [367 kB]
+[33m50% [8 libjs-highlight.js 2501 B/367 kB 1%]                                                                1731 kB/s 7s[0m[33m52% [Waiting for headers]                                                                                  1731 kB/s 7s[0m                                                                                                                       Get:9 http://archive.ubuntu.com/ubuntu jammy/main amd64 libc-ares2 amd64 1.18.1-1build1 [44.9 kB]
+[33m52% [9 libc-ares2 80 B/44.9 kB 0%]                                                                         1731 kB/s 7s[0m[33m54% [Waiting for headers]                                                                                  1731 kB/s 7s[0m                                                                                                                       Get:10 http://archive.ubuntu.com/ubuntu jammy/universe amd64 libnode72 amd64 12.22.9~dfsg-1ubuntu3 [10.8 MB]
+[33m54% [10 libnode72 1618 B/10.8 MB 0%]                                                                       1731 kB/s 7s[0m[33m57% [10 libnode72 888 kB/10.8 MB 8%]                                                                       1731 kB/s 7s[0m[33m60% [10 libnode72 1777 kB/10.8 MB 16%]                                                                     1731 kB/s 6s[0m[33m62% [10 libnode72 2673 kB/10.8 MB 25%]                                                                     1731 kB/s 6s[0m[33m65% [10 libnode72 3564 kB/10.8 MB 33%]                                                                     1731 kB/s 5s[0m[33m68% [10 libnode72 4443 kB/10.8 MB 41%]                                                                     1731 kB/s 5s[0m[33m71% [10 libnode72 5334 kB/10.8 MB 49%]                                                                     1731 kB/s 4s[0m[33m73% [10 libnode72 6224 kB/10.8 MB 58%]                                                                     1731 kB/s 4s[0m[33m76% [10 libnode72 7121 kB/10.8 MB 66%]                                                                     1731 kB/s 3s[0m[33m79% [10 libnode72 8008 kB/10.8 MB 74%]                                                                     1731 kB/s 3s[0m[33m81% [10 libnode72 8899 kB/10.8 MB 82%]                                                                     1731 kB/s 2s[0m[33m84% [10 libnode72 9789 kB/10.8 MB 91%]                                                                     1778 kB/s 1s[0m[33m87% [10 libnode72 10.7 MB/10.8 MB 99%]                                                                     1778 kB/s 1s[0m[33m89% [Waiting for headers]                                                                                  1778 kB/s 1s[0m                                                                                                                       Get:11 http://archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs-doc all 12.22.9~dfsg-1ubuntu3 [2409 kB]
+[33m89% [11 nodejs-doc 663 B/2409 kB 0%]                                                                       1778 kB/s 1s[0m[33m92% [11 nodejs-doc 891 kB/2409 kB 37%]                                                                     1778 kB/s 0s[0m[33m94% [11 nodejs-doc 1776 kB/2409 kB 74%]                                                                    1778 kB/s 0s[0m[33m98% [Waiting for headers]                                                                                  1778 kB/s 0s[0m                                                                                                                       Get:12 http://archive.ubuntu.com/ubuntu jammy/universe amd64 nodejs amd64 12.22.9~dfsg-1ubuntu3 [122 kB]
+[33m98% [12 nodejs 2858 B/122 kB 2%]                                                                           1778 kB/s 0s[0m[33m100% [Working]                                                                                             1778 kB/s 0s[0m                                                                                                                       Fetched 26.1 MB in 15s (1757 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1ASelecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4468 files and directories currently installed.)
+Preparing to unpack .../00-openssl_3.0.2-0ubuntu1.5_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  2%][49m[39m [##................................................................................................] 8Unpacking openssl (3.0.2-0ubuntu1.5) ...
+7[30;0f[42m[30mProgress: [  4%][49m[39m [####..............................................................................................] 8Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20211016_all.deb ...
+7[30;0f[42m[30mProgress: [  6%][49m[39m [######............................................................................................] 8Unpacking ca-certificates (20211016) ...
+7[30;0f[42m[30mProgress: [  8%][49m[39m [########..........................................................................................] 8Selecting previously unselected package libicu70:amd64.
+Preparing to unpack .../02-libicu70_70.1-2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 10%][49m[39m [##########........................................................................................] 8Unpacking libicu70:amd64 (70.1-2) ...
+7[30;0f[42m[30mProgress: [ 12%][49m[39m [############......................................................................................] 8Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../03-libnghttp2-14_1.43.0-1build3_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 14%][49m[39m [#############.....................................................................................] 8Unpacking libnghttp2-14:amd64 (1.43.0-1build3) ...
+7[30;0f[42m[30mProgress: [ 16%][49m[39m [################..................................................................................] 8Selecting previously unselected package libuv1:amd64.
+Preparing to unpack .../04-libuv1_1.43.0-1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 18%][49m[39m [##################................................................................................] 8Unpacking libuv1:amd64 (1.43.0-1) ...
+7[30;0f[42m[30mProgress: [ 20%][49m[39m [####################..............................................................................] 8Selecting previously unselected package javascript-common.
+Preparing to unpack .../05-javascript-common_11+nmu1_all.deb ...
+7[30;0f[42m[30mProgress: [ 22%][49m[39m [######################............................................................................] 8Unpacking javascript-common (11+nmu1) ...
+7[30;0f[42m[30mProgress: [ 24%][49m[39m [########################..........................................................................] 8Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../06-libbrotli1_1.0.9-2build6_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 8Unpacking libbrotli1:amd64 (1.0.9-2build6) ...
+7[30;0f[42m[30mProgress: [ 29%][49m[39m [###########################.......................................................................] 8Selecting previously unselected package libjs-highlight.js.
+Preparing to unpack .../07-libjs-highlight.js_9.18.5+dfsg1-1_all.deb ...
+7[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 8Unpacking libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Selecting previously unselected package libc-ares2:amd64.
+Preparing to unpack .../08-libc-ares2_1.18.1-1build1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 35%][49m[39m [##################################................................................................] 8Unpacking libc-ares2:amd64 (1.18.1-1build1) ...
+7[30;0f[42m[30mProgress: [ 37%][49m[39m [####################################..............................................................] 8Selecting previously unselected package libnode72:amd64.
+Preparing to unpack .../09-libnode72_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 39%][49m[39m [######################################............................................................] 8Unpacking libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 41%][49m[39m [########################################..........................................................] 8Selecting previously unselected package nodejs-doc.
+Preparing to unpack .../10-nodejs-doc_12.22.9~dfsg-1ubuntu3_all.deb ...
+7[30;0f[42m[30mProgress: [ 43%][49m[39m [##########################################........................................................] 8Unpacking nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 45%][49m[39m [############################################......................................................] 8Selecting previously unselected package nodejs.
+Preparing to unpack .../11-nodejs_12.22.9~dfsg-1ubuntu3_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 47%][49m[39m [##############################################....................................................] 8Unpacking nodejs (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 49%][49m[39m [################################################..................................................] 8Setting up javascript-common (11+nmu1) ...
+7[30;0f[42m[30mProgress: [ 51%][49m[39m [##################################################................................................] 87[30;0f[42m[30mProgress: [ 53%][49m[39m [####################################################..............................................] 8Setting up libbrotli1:amd64 (1.0.9-2build6) ...
+7[30;0f[42m[30mProgress: [ 55%][49m[39m [#####################################################.............................................] 87[30;0f[42m[30mProgress: [ 57%][49m[39m [#######################################################...........................................] 8Setting up libnghttp2-14:amd64 (1.43.0-1build3) ...
+7[30;0f[42m[30mProgress: [ 59%][49m[39m [##########################################################........................................] 87[30;0f[42m[30mProgress: [ 61%][49m[39m [############################################################......................................] 8Setting up libc-ares2:amd64 (1.18.1-1build1) ...
+7[30;0f[42m[30mProgress: [ 63%][49m[39m [##############################################################....................................] 87[30;0f[42m[30mProgress: [ 65%][49m[39m [################################################################..................................] 8Setting up libuv1:amd64 (1.43.0-1) ...
+7[30;0f[42m[30mProgress: [ 67%][49m[39m [##################################################################................................] 87[30;0f[42m[30mProgress: [ 69%][49m[39m [####################################################################..............................] 8Setting up libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[30;0f[42m[30mProgress: [ 71%][49m[39m [######################################################################............................] 87[30;0f[42m[30mProgress: [ 73%][49m[39m [########################################################################..........................] 8Setting up openssl (3.0.2-0ubuntu1.5) ...
+7[30;0f[42m[30mProgress: [ 76%][49m[39m [#########################################################################.........................] 87[30;0f[42m[30mProgress: [ 78%][49m[39m [############################################################################......................] 8Setting up libicu70:amd64 (70.1-2) ...
+7[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 87[30;0f[42m[30mProgress: [ 82%][49m[39m [################################################################################..................] 8Setting up libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 84%][49m[39m [##################################################################################................] 87[30;0f[42m[30mProgress: [ 86%][49m[39m [####################################################################################..............] 8Setting up ca-certificates (20211016) ...
+7[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+127 added, 0 removed; done.
+7[30;0f[42m[30mProgress: [ 90%][49m[39m [########################################################################################..........] 8Setting up nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 90%][49m[39m [########################################################################################..........] 8Setting up nodejs (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################........] 8update-alternatives: using /usr/bin/nodejs to provide /usr/bin/js (js) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/js.1.gz because associated file /usr/share/man/man1/nodejs.1.gz (of link group js) doesn't exist
+7[30;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################......] 8Processing triggers for libc-bin (2.35-0ubuntu3) ...
+Processing triggers for ca-certificates (20211016) ...
+7[30;0f[42m[30mProgress: [ 96%][49m[39m [##############################################################################################....] 8Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+7[30;0f[42m[30mProgress: [ 98%][49m[39m [################################################################################################..] 8
+7[0;30r8[1A[J[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# node /usr/src/app/index.js 
+[?2004lHello World
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# [Knode -v
+[?2004lv12.22.9
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt remove nodejs
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 9%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libbrotli1 libc-ares2 libicu70 libjs-highlight.js libnghttp2-14 libnode72 libuv1 nodejs-doc
+Use 'apt autoremove' to remove them.
+The following packages will be REMOVED:
+  nodejs
+0 upgraded, 0 newly installed, 1 to remove and 8 not upgraded.
+After this operation, 932 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5333 files and directories currently installed.)
+Removing nodejs (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 87[30;0f[42m[30mProgress: [ 67%][49m[39m [#################################################################.................................] 8
+7[0;30r8[1A[J[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# curl -sL https://deb.nodesource.com/setup_16.x | bash
+[?2004l installbash: curl: command not found
+ -y nodejs[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# [Kapt install -y nodejs                     apt install curl -y
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 9%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1 nodejs-doc
+Use 'apt autoremove' to remove them.
+The following additional packages will be installed:
+  libcurl4 libldap-2.5-0 libldap-common libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4
+  publicsuffix
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  curl libcurl4 libldap-2.5-0 libldap-common libpsl5 librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4
+  publicsuffix
+0 upgraded, 11 newly installed, 0 to remove and 8 not upgraded.
+Need to get 1247 kB of archives.
+After this operation, 3561 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpsl5 amd64 0.21.0-1.2build2 [58.4 kB]
+[33m0% [1 libpsl5 4099 B/58.4 kB 7%][0m[33m                                6% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 publicsuffix all 20211207.1025-1 [129 kB]
+[33m6% [2 publicsuffix 2637 B/129 kB 2%][0m[33m                                    16% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg2-3ubuntu1 [20.8 kB]
+[33m16% [3 libsasl2-modules-db 1356 B/20.8 kB 7%][0m[33m                                             19% [Waiting for headers][0m                         Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsasl2-2 amd64 2.1.27+dfsg2-3ubuntu1 [53.9 kB]
+[33m19% [4 libsasl2-2 719 B/53.9 kB 1%][0m[33m                                   24% [Working][0m             Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-2.5-0 amd64 2.5.12+dfsg-0ubuntu0.22.04.1 [184 kB]
+[33m24% [5 libldap-2.5-0 2006 B/184 kB 1%][0m[33m                                      38% [Waiting for headers][0m                         Get:6 http://archive.ubuntu.com/ubuntu jammy/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build4 [58.2 kB]
+[33m38% [6 librtmp1 1973 B/58.2 kB 3%][0m[33m                                  43% [Working][0m             Get:7 http://archive.ubuntu.com/ubuntu jammy/main amd64 libssh-4 amd64 0.9.6-2build1 [184 kB]
+[33m43% [7 libssh-4 1900 B/184 kB 1%][0m[33m                                 57% [Waiting for headers][0m                         Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.2 [290 kB]
+[33m57% [8 libcurl4 1211 B/290 kB 0%][0m[33m                                 77% [Waiting for headers][0m                         Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.2 [194 kB]
+[33m77% [9 curl 230 B/194 kB 0%][0m[33m                            92% [Working][0m             Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libldap-common all 2.5.12+dfsg-0ubuntu0.22.04.1 [16.4 kB]
+[33m92% [10 libldap-common 1515 B/16.4 kB 9%][0m[33m                                         94% [Waiting for headers][0m                         Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 libsasl2-modules amd64 2.1.27+dfsg2-3ubuntu1 [57.5 kB]
+[33m95% [11 libsasl2-modules 2354 B/57.5 kB 4%][0m[33m                                           100% [Working][0m              Fetched 1247 kB in 3s (476 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1ASelecting previously unselected package libpsl5:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5273 files and directories currently installed.)
+Preparing to unpack .../00-libpsl5_0.21.0-1.2build2_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  2%][49m[39m [##................................................................................................] 8Unpacking libpsl5:amd64 (0.21.0-1.2build2) ...
+7[30;0f[42m[30mProgress: [  4%][49m[39m [####..............................................................................................] 8Selecting previously unselected package publicsuffix.
+Preparing to unpack .../01-publicsuffix_20211207.1025-1_all.deb ...
+7[30;0f[42m[30mProgress: [  7%][49m[39m [######............................................................................................] 8Unpacking publicsuffix (20211207.1025-1) ...
+7[30;0f[42m[30mProgress: [  9%][49m[39m [########..........................................................................................] 8Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../02-libsasl2-modules-db_2.1.27+dfsg2-3ubuntu1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 11%][49m[39m [##########........................................................................................] 8Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 13%][49m[39m [#############.....................................................................................] 8Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../03-libsasl2-2_2.1.27+dfsg2-3ubuntu1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 16%][49m[39m [###############...................................................................................] 8Unpacking libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 18%][49m[39m [#################.................................................................................] 8Selecting previously unselected package libldap-2.5-0:amd64.
+Preparing to unpack .../04-libldap-2.5-0_2.5.12+dfsg-0ubuntu0.22.04.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 20%][49m[39m [###################...............................................................................] 8Unpacking libldap-2.5-0:amd64 (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+7[30;0f[42m[30mProgress: [ 22%][49m[39m [#####################.............................................................................] 8Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../05-librtmp1_2.4+20151223.gitfa8646d.1-2build4_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 24%][49m[39m [#######################...........................................................................] 8Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 8Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../06-libssh-4_0.9.6-2build1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 29%][49m[39m [############################......................................................................] 8Unpacking libssh-4:amd64 (0.9.6-2build1) ...
+7[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 8Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../07-libcurl4_7.81.0-1ubuntu1.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.2) ...
+7[30;0f[42m[30mProgress: [ 36%][49m[39m [##################################................................................................] 8Selecting previously unselected package curl.
+Preparing to unpack .../08-curl_7.81.0-1ubuntu1.2_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 38%][49m[39m [#####################################.............................................................] 8Unpacking curl (7.81.0-1ubuntu1.2) ...
+7[30;0f[42m[30mProgress: [ 40%][49m[39m [#######################################...........................................................] 8Selecting previously unselected package libldap-common.
+Preparing to unpack .../09-libldap-common_2.5.12+dfsg-0ubuntu0.22.04.1_all.deb ...
+7[30;0f[42m[30mProgress: [ 42%][49m[39m [#########################################.........................................................] 8Unpacking libldap-common (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+7[30;0f[42m[30mProgress: [ 44%][49m[39m [###########################################.......................................................] 8Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../10-libsasl2-modules_2.1.27+dfsg2-3ubuntu1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 47%][49m[39m [#############################################.....................................................] 8Unpacking libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 49%][49m[39m [###############################################...................................................] 8Setting up libpsl5:amd64 (0.21.0-1.2build2) ...
+7[30;0f[42m[30mProgress: [ 51%][49m[39m [##################################################................................................] 87[30;0f[42m[30mProgress: [ 53%][49m[39m [####################################################..............................................] 8Setting up libsasl2-modules:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 56%][49m[39m [######################################################............................................] 87[30;0f[42m[30mProgress: [ 58%][49m[39m [########################################################..........................................] 8Setting up libldap-common (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+7[30;0f[42m[30mProgress: [ 60%][49m[39m [##########################################################........................................] 87[30;0f[42m[30mProgress: [ 62%][49m[39m [############################################################......................................] 8Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 64%][49m[39m [###############################################################...................................] 87[30;0f[42m[30mProgress: [ 67%][49m[39m [#################################################################.................................] 8Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build4) ...
+7[30;0f[42m[30mProgress: [ 69%][49m[39m [###################################################################...............................] 87[30;0f[42m[30mProgress: [ 71%][49m[39m [#####################################################################.............................] 8Setting up libsasl2-2:amd64 (2.1.27+dfsg2-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 73%][49m[39m [#######################################################################...........................] 87[30;0f[42m[30mProgress: [ 76%][49m[39m [##########################################################################........................] 8Setting up libssh-4:amd64 (0.9.6-2build1) ...
+7[30;0f[42m[30mProgress: [ 78%][49m[39m [############################################################################......................] 87[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 8Setting up publicsuffix (20211207.1025-1) ...
+7[30;0f[42m[30mProgress: [ 82%][49m[39m [################################################################################..................] 87[30;0f[42m[30mProgress: [ 84%][49m[39m [##################################################################################................] 8Setting up libldap-2.5-0:amd64 (2.5.12+dfsg-0ubuntu0.22.04.1) ...
+7[30;0f[42m[30mProgress: [ 87%][49m[39m [####################################################################################..............] 87[30;0f[42m[30mProgress: [ 89%][49m[39m [#######################################################################################...........] 8Setting up libcurl4:amd64 (7.81.0-1ubuntu1.2) ...
+7[30;0f[42m[30mProgress: [ 91%][49m[39m [#########################################################################################.........] 87[30;0f[42m[30mProgress: [ 93%][49m[39m [###########################################################################################.......] 8Setting up curl (7.81.0-1ubuntu1.2) ...
+7[30;0f[42m[30mProgress: [ 96%][49m[39m [#############################################################################################.....] 87[30;0f[42m[30mProgress: [ 98%][49m[39m [###############################################################################################...] 8Processing triggers for libc-bin (2.35-0ubuntu3) ...
+
+7[0;30r8[1A[J[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# curl -sL https://deb.nodesource.com/setup_16.x | bash
+[?2004l -y nodejs
+## Installing the NodeSource Node.js 16.x repo...
+
+
+## Populating apt-get cache...
+
++ apt-get update
+0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+0% [Waiting for headers]                        Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+0% [Waiting for headers]0% [Waiting for headers]                        Hit:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+                        0% [Working]0% [Waiting for headers]0% [Waiting for headers]                        Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+                        0% [Working]20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+## Installing packages required for setup: lsb-release gnupg...
+
++ apt-get install -y lsb-release gnupg > /dev/null 2>&1
+
+## Confirming "jammy" is supported...
+
++ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_16.x/dists/jammy/Release'
+
+## Adding the NodeSource signing key to your keyring...
+
++ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | tee /usr/share/keyrings/nodesource.gpg >/dev/null
+
+## Creating apt sources list file for the NodeSource Node.js 16.x repo...
+
++ echo 'deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x jammy main' > /etc/apt/sources.list.d/nodesource.list
++ echo 'deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x jammy main' >> /etc/apt/sources.list.d/nodesource.list
+
+## Running `apt-get update` for you...
+
++ apt-get update
+0% [Working]            Get:1 https://deb.nodesource.com/node_16.x jammy InRelease [4583 B]
+0% [Connecting to archive.ubuntu.com (91.189.91.39)] [Connecting to security.ubuntu.com (91.189.91.38)] [1 InRelease 45                                                                                                                       0% [Connecting to archive.ubuntu.com (91.189.91.39)] [Connecting to security.ubuntu.com (91.189.91.38)]0% [Connecting to archive.ubuntu.com (91.189.91.39)] [Connecting to security.ubuntu.com (91.189.91.38)]                                                                                                       Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+                                                                                                       0% [Waiting for headers] [Waiting for headers]                                              Hit:3 http://archive.ubuntu.com/ubuntu jammy InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+                                              0% [Waiting for headers]                        Get:6 https://deb.nodesource.com/node_16.x jammy/main amd64 Packages [773 B]
+0% [6 Packages 773 B/773 B 100%]                                0% [Working]0% [6 Packages store 0 B]                         0% [Working]100% [Working]              Fetched 5356 B in 1s (9870 B/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+## Run `[1msudo apt-get install -y nodejs(B[m` to install Node.js 16.x and npm
+## You may also need development tools to build native addons:
+     sudo apt-get install gcc g++ make
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+     echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt-get update && sudo apt-get install yarn
+
+
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# [Kapt install -y nodejs
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1
+Use 'apt autoremove' to remove them.
+The following packages will be REMOVED:
+  nodejs-doc
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 1 to remove and 8 not upgraded.
+Need to get 26.4 MB of archives.
+After this operation, 114 MB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 https://deb.nodesource.com/node_16.x jammy/main amd64 nodejs amd64 16.15.1-deb-1nodesource1 [26.4 MB]
+[33m0% [1 nodejs 16.2 kB/26.4 MB 0%][0m[33m36% [1 nodejs 11.8 MB/26.4 MB 45%][0m[33m71% [1 nodejs 23.4 MB/26.4 MB 89%][0m[33m                                  100% [Working][0m              Fetched 26.4 MB in 1s (21.1 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6356 files and directories currently installed.)
+Removing nodejs-doc (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [ 14%][49m[39m [#############.....................................................................................] 87[30;0f[42m[30mProgress: [ 29%][49m[39m [###########################.......................................................................] 8Selecting previously unselected package nodejs.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.15.1-deb-1nodesource1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 43%][49m[39m [##########################################........................................................] 8Unpacking nodejs (16.15.1-deb-1nodesource1) ...
+[1mdpkg:[0m error processing archive /var/cache/apt/archives/nodejs_16.15.1-deb-1nodesource1_amd64.deb (--unpack):
+ trying to overwrite '/usr/share/systemtap/tapset/node.stp', which is also in package libnode72:amd64 12.22.9~dfsg-1ubuntu3
+Errors were encountered while processing:
+ /var/cache/apt/archives/nodejs_16.15.1-deb-1nodesource1_amd64.deb
+
+7[0;30r8[1A[J[1;31mE: [0mSub-process /usr/bin/dpkg returned an error code (1)[0m
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# node -v
+[?2004lbash: /usr/bin/node: No such file or directory
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt remove nodejs
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+Package 'nodejs' is not installed, so not removed
+The following packages were automatically installed and are no longer required:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# sudo apt update
+[?2004lbash: sudo: command not found
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt update
+[?2004l[33m0% [Working][0m            Hit:1 https://deb.nodesource.com/node_16.x jammy InRelease
+[33m0% [Connecting to archive.ubuntu.com (91.189.91.39)] [Connecting to security.ubuntu.com (91.189.91.38)][0m[33m0% [Connecting to archive.ubuntu.com (91.189.91.39)] [Connecting to security.ubuntu.com (91.189.91.38)][0m                                                                                                       Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+[33m                                                                                                       0% [Waiting for headers][0m                        Hit:3 http://archive.ubuntu.com/ubuntu jammy InRelease
+[33m                        0% [Working][0m[33m0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Hit:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+[33m                        0% [Working][0m[33m0% [Waiting for headers][0m                        Hit:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+[33m                        0% [Working][0m[33m20% [Working][0m             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+8 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt upgrade
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 10%Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1
+Use 'apt autoremove' to remove them.
+The following packages will be upgraded:
+  e2fsprogs libcom-err2 libext2fs2 libss2 libssl3 libsystemd0 libudev1 logsave
+8 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3125 kB of archives.
+After this operation, 2048 B of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libsystemd0 amd64 249.11-0ubuntu3.3 [318 kB]
+[33m0% [1 libsystemd0 4097 B/318 kB 1%][0m[33m5% [1 libsystemd0 207 kB/318 kB 65%][0m[33m                                    11% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 logsave amd64 1.46.5-2ubuntu1.1 [9932 B]
+[33m11% [2 logsave 2640 B/9932 B 27%][0m[33m                                 13% [Waiting for headers][0m                         Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libext2fs2 amd64 1.46.5-2ubuntu1.1 [208 kB]
+[33m13% [3 libext2fs2 1185 B/208 kB 1%][0m[33m                                   21% [Waiting for headers][0m                         Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 e2fsprogs amd64 1.46.5-2ubuntu1.1 [591 kB]
+[33m21% [4 e2fsprogs 2876 B/591 kB 0%][0m[33m29% [4 e2fsprogs 292 kB/591 kB 49%][0m[33m36% [4 e2fsprogs 581 kB/591 kB 98%][0m[33m                                   39% [Waiting for headers][0m                         Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libcom-err2 amd64 1.46.5-2ubuntu1.1 [9158 B]
+[33m39% [5 libcom-err2 1870 B/9158 B 20%][0m[33m                                     42% [Waiting for headers][0m                         Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libssl3 amd64 3.0.2-0ubuntu1.5 [1900 kB]
+[33m42% [6 libssl3 1187 B/1900 kB 0%][0m[33m49% [6 libssl3 290 kB/1900 kB 15%][0m[33m56% [6 libssl3 579 kB/1900 kB 30%][0m[33m64% [6 libssl3 868 kB/1900 kB 46%][0m[33m71% [6 libssl3 1158 kB/1900 kB 61%][0m[33m79% [6 libssl3 1447 kB/1900 kB 76%][0m[33m86% [6 libssl3 1736 kB/1900 kB 91%][0m[33m                                   93% [Waiting for headers][0m                         Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libudev1 amd64 249.11-0ubuntu3.3 [77.4 kB]
+[33m93% [7 libudev1 2029 B/77.4 kB 3%][0m[33m                                  97% [Waiting for headers][0m                         Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libss2 amd64 1.46.5-2ubuntu1.1 [12.3 kB]
+[33m97% [8 libss2 298 B/12.3 kB 2%][0m[33m                               100% [Working][0m              Fetched 3125 kB in 6s (530 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../libsystemd0_249.11-0ubuntu3.3_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  3%][49m[39m [##................................................................................................] 8Unpacking libsystemd0:amd64 (249.11-0ubuntu3.3) over (249.11-0ubuntu3.1) ...
+7[30;0f[42m[30mProgress: [  6%][49m[39m [#####.............................................................................................] 8Setting up libsystemd0:amd64 (249.11-0ubuntu3.3) ...
+7[30;0f[42m[30mProgress: [  9%][49m[39m [########..........................................................................................] 87[30;0f[42m[30mProgress: [ 12%][49m[39m [###########.......................................................................................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../logsave_1.46.5-2ubuntu1.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 15%][49m[39m [##############....................................................................................] 8Unpacking logsave (1.46.5-2ubuntu1.1) over (1.46.5-2ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 18%][49m[39m [#################.................................................................................] 8Preparing to unpack .../libext2fs2_1.46.5-2ubuntu1.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 21%][49m[39m [####################..............................................................................] 8Unpacking libext2fs2:amd64 (1.46.5-2ubuntu1.1) over (1.46.5-2ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 24%][49m[39m [#######################...........................................................................] 8Setting up libext2fs2:amd64 (1.46.5-2ubuntu1.1) ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 87[30;0f[42m[30mProgress: [ 30%][49m[39m [#############################.....................................................................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../e2fsprogs_1.46.5-2ubuntu1.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 33%][49m[39m [################################..................................................................] 8Unpacking e2fsprogs (1.46.5-2ubuntu1.1) over (1.46.5-2ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 36%][49m[39m [###################################...............................................................] 8Preparing to unpack .../libcom-err2_1.46.5-2ubuntu1.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 39%][49m[39m [######################################............................................................] 8Unpacking libcom-err2:amd64 (1.46.5-2ubuntu1.1) over (1.46.5-2ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 42%][49m[39m [#########################################.........................................................] 8Setting up libcom-err2:amd64 (1.46.5-2ubuntu1.1) ...
+7[30;0f[42m[30mProgress: [ 45%][49m[39m [############################################......................................................] 87[30;0f[42m[30mProgress: [ 48%][49m[39m [###############################################...................................................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../libssl3_3.0.2-0ubuntu1.5_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 52%][49m[39m [##################################################................................................] 8Unpacking libssl3:amd64 (3.0.2-0ubuntu1.5) over (3.0.2-0ubuntu1.2) ...
+7[30;0f[42m[30mProgress: [ 55%][49m[39m [#####################################################.............................................] 8Setting up libssl3:amd64 (3.0.2-0ubuntu1.5) ...
+7[30;0f[42m[30mProgress: [ 58%][49m[39m [########################################################..........................................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+7[30;0f[42m[30mProgress: [ 61%][49m[39m [###########################################################.......................................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../libudev1_249.11-0ubuntu3.3_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 64%][49m[39m [##############################################################....................................] 8Unpacking libudev1:amd64 (249.11-0ubuntu3.3) over (249.11-0ubuntu3.1) ...
+7[30;0f[42m[30mProgress: [ 67%][49m[39m [#################################################################.................................] 8Setting up libudev1:amd64 (249.11-0ubuntu3.3) ...
+7[30;0f[42m[30mProgress: [ 70%][49m[39m [####################################################################..............................] 87[30;0f[42m[30mProgress: [ 73%][49m[39m [#######################################################################...........................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../libss2_1.46.5-2ubuntu1.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 76%][49m[39m [##########################################################################........................] 8Unpacking libss2:amd64 (1.46.5-2ubuntu1.1) over (1.46.5-2ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 79%][49m[39m [#############################################################################.....................] 8Setting up libss2:amd64 (1.46.5-2ubuntu1.1) ...
+7[30;0f[42m[30mProgress: [ 82%][49m[39m [################################################################################..................] 87[30;0f[42m[30mProgress: [ 85%][49m[39m [###################################################################################...............] 8Setting up logsave (1.46.5-2ubuntu1.1) ...
+7[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 87[30;0f[42m[30mProgress: [ 91%][49m[39m [#########################################################################################.........] 8Setting up e2fsprogs (1.46.5-2ubuntu1.1) ...
+7[30;0f[42m[30mProgress: [ 94%][49m[39m [############################################################################################......] 87[30;0f[42m[30mProgress: [ 97%][49m[39m [###############################################################################################...] 8Processing triggers for libc-bin (2.35-0ubuntu3) ...
+
+7[0;30r8[1A[J[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt     apt upgrade[1Pdate[5@sudo apt updateapt remove nodejs[10Pnode -vapt install -y nodejs
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1
+Use 'apt autoremove' to remove them.
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 26.4 MB of archives.
+After this operation, 124 MB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 https://deb.nodesource.com/node_16.x jammy/main amd64 nodejs amd64 16.15.1-deb-1nodesource1 [26.4 MB]
+[33m0% [1 nodejs 16.2 kB/26.4 MB 0%][0m[33m34% [1 nodejs 11.3 MB/26.4 MB 43%][0m[33m69% [1 nodejs 22.8 MB/26.4 MB 87%][0m[33m                                  100% [Working][0m              Fetched 26.4 MB in 1s (21.5 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.15.1-deb-1nodesource1_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [ 20%][49m[39m [###################...............................................................................] 8Unpacking nodejs (16.15.1-deb-1nodesource1) ...
+[1mdpkg:[0m error processing archive /var/cache/apt/archives/nodejs_16.15.1-deb-1nodesource1_amd64.deb (--unpack):
+ trying to overwrite '/usr/share/systemtap/tapset/node.stp', which is also in package libnode72:amd64 12.22.9~dfsg-1ubuntu3
+Errors were encountered while processing:
+ /var/cache/apt/archives/nodejs_16.15.1-deb-1nodesource1_amd64.deb
+
+7[0;30r8[1A[J[1;31mE: [0mSub-process /usr/bin/dpkg returned an error code (1)[0m
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# n9ode       node -v
+[?2004lbash: /usr/bin/node: No such file or directory
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt autoremove
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+The following packages will be REMOVED:
+  javascript-common libc-ares2 libicu70 libjs-highlight.js libnode72 libuv1
+0 upgraded, 0 newly installed, 6 to remove and 0 not upgraded.
+After this operation, 79.0 MB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6176 files and directories currently installed.)
+Removing javascript-common (11+nmu1) ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  8%][49m[39m [#######...........................................................................................] 87[30;0f[42m[30mProgress: [ 15%][49m[39m [###############...................................................................................] 8Removing libnode72:amd64 (12.22.9~dfsg-1ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 23%][49m[39m [######################............................................................................] 87[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 8Removing libc-ares2:amd64 (1.18.1-1build1) ...
+7[30;0f[42m[30mProgress: [ 38%][49m[39m [#####################################.............................................................] 87[30;0f[42m[30mProgress: [ 46%][49m[39m [#############################################.....................................................] 8Removing libicu70:amd64 (70.1-2) ...
+7[30;0f[42m[30mProgress: [ 54%][49m[39m [####################################################..............................................] 87[30;0f[42m[30mProgress: [ 62%][49m[39m [############################################################......................................] 8Removing libjs-highlight.js (9.18.5+dfsg1-1) ...
+7[30;0f[42m[30mProgress: [ 69%][49m[39m [###################################################################...............................] 87[30;0f[42m[30mProgress: [ 77%][49m[39m [###########################################################################.......................] 8Removing libuv1:amd64 (1.43.0-1) ...
+7[30;0f[42m[30mProgress: [ 85%][49m[39m [##################################################################################................] 87[30;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################........] 8Processing triggers for libc-bin (2.35-0ubuntu3) ...
+
+7[0;30r8[1A[J[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# apt autoremove[7Pnode -vapt install -y nodejs
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 8%Reading package lists... 8%Reading package lists... 9%Reading package lists... 9%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 26.4 MB of archives.
+After this operation, 124 MB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 https://deb.nodesource.com/node_16.x jammy/main amd64 nodejs amd64 16.15.1-deb-1nodesource1 [26.4 MB]
+[33m0% [1 nodejs 16.2 kB/26.4 MB 0%][0m[33m35% [1 nodejs 11.4 MB/26.4 MB 43%][0m[33m69% [1 nodejs 22.6 MB/26.4 MB 86%][0m[33m                                  100% [Working][0m              Fetched 26.4 MB in 1s (21.3 MB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;29r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6031 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.15.1-deb-1nodesource1_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [ 20%][49m[39m [###################...............................................................................] 8Unpacking nodejs (16.15.1-deb-1nodesource1) ...
+7[30;0f[42m[30mProgress: [ 40%][49m[39m [#######################################...........................................................] 8Setting up nodejs (16.15.1-deb-1nodesource1) ...
+7[30;0f[42m[30mProgress: [ 60%][49m[39m [##########################################################........................................] 87[30;0f[42m[30mProgress: [ 80%][49m[39m [##############################################################################....................] 8
+7[0;30r8[1A[J[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# nof de -v
+[?2004lv16.15.1
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# node    node /usr/src/app/index.js
+[?2004lHello World
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# [Kls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib32[0m  [01;36mlib64[0m  [01;36mlibx32[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# cd ..
+[?2004l[?2004h]0;root@04523c68b1a5: /root@04523c68b1a5:/# exit
+[?2004lexit
+]0;anxi@DESKTOP-GNVK18U: ~/fso-12/fso-12/script-answers[01;32manxi@DESKTOP-GNVK18U[00m:[01;34m~/fso-12/fso-12/script-answers[00m$ exit
+exit
+
+Script done on 2022-06-23 12:20:25+03:00 [COMMAND_EXIT_CODE="0"]
