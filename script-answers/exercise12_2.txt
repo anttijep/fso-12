@@ -1,0 +1,10 @@
+Script started on 2022-06-23 11:43:11+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+]0;anxi@DESKTOP-GNVK18U: ~/fso-12/fso-12/script-answers[01;32manxi@DESKTOP-GNVK18U[00m:[01;34m~/fso-12/fso-12/script-answers[00m$ docker run -it ubuntu bash
+[?2004h]0;root@cd3c00417dd4: /root@cd3c00417dd4:/# [K]0;root@cd3c00417dd4: /root@cd3c00417dd4:/# mkdir /su  usr/src/app
+[?2004l[?2004h]0;root@cd3c00417dd4: /root@cd3c00417dd4:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@cd3c00417dd4: /root@cd3c00417dd4:/# [Kvim /usr/src/app/inmd  dex.js                           exit
+[?2004lexit
+]0;anxi@DESKTOP-GNVK18U: ~/fso-12/fso-12/script-answers[01;32manxi@DESKTOP-GNVK18U[00m:[01;34m~/fso-12/fso-12/script-answers[00m$ exit
+exit
+
+Script done on 2022-06-23 11:43:45+03:00 [COMMAND_EXIT_CODE="0"]
