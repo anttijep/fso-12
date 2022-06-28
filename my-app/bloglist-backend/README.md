@@ -1,0 +1,1 @@
+requires env variables with MONGODB_URI, SECRET & TEST_MONGODB_URI

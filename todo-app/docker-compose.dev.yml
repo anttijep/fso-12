@@ -1,0 +1,29 @@
+services:
+  app:
+    extends:
+      file: ./todo-frontend/docker-compose.dev.yml
+      service: app
+    environment:
+      - REACT_APP_BACKEND_URL=/api/
+  server:
+    extends:
+      file: ./todo-backend/docker-compose.dev.yml
+      service: server
+  mongo:
+    extends:
+      file: ./todo-backend/docker-compose.dev.yml
+      service: mongo
+  redis:
+    extends:
+      file: ./todo-backend/docker-compose.dev.yml
+      service: redis
+  nginx:
+    image: nginx:1.23.0
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: reverse-proxy
+    depends_on:
+      - app # wait for the frontend container to be started
+      - server

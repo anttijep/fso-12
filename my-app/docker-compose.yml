@@ -1,0 +1,27 @@
+services:
+  frontend:
+    image: blog-frontend
+    build:
+      context: ./bloglist-frontend
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    container_name: blog-frontend
+  backend:
+    image: blog-backend
+    build:
+      context: ./bloglist-backend
+      dockerfile: Dockerfile
+    ports:
+      - 3003:3003
+    container_name: blog-backend
+  nginx:
+    image: nginx:1.23.0
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 80:80
+    container_name: my-reverse-proxy
+    depends_on:
+      - frontend
+      - backend

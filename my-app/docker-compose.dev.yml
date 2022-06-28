@@ -1,0 +1,31 @@
+services:
+  frontend:
+    image: frontend-dev
+    build:
+      context: ./bloglist-frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./bloglist-frontend:/usr/src/app
+    ports:
+      - 3000:3000
+    container_name: frontend-dev
+  backend:
+    image: backend-dev
+    build:
+      context: ./bloglist-backend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./bloglist-backend/src:/usr/src/app/src
+    ports:
+      - 3003:3003
+    container_name: backend-dev
+  nginx:
+    image: nginx:1.23.0
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: my-reverse-proxy
+    depends_on:
+      - frontend
+      - backend
